@@ -20,7 +20,8 @@
         <div class="navlist">
           <ul>
             <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
-            <li class="nav-item"><a href="#resume-projects" class="nav-link">My skills & Resume</a></li>
+            <li class="nav-item"><a href="#resume-projects" class="nav-link">My
+                skills & Resume</a></li>
             <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
@@ -77,7 +78,7 @@
                   <img class="css skill-img"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
                     alt="css logo">
-                    <h4>CSS</h4>
+                  <h4>CSS</h4>
                 </div>
                 <div class="skill-card">
                   <img class="js skill-img"
@@ -108,24 +109,131 @@
           </div>
         </div>
 
+        <!-- projects -->
         <div class="projects-back">
-          <div id="projects">
-            <h3 class="section-title">Projects</h3>
-            <h2>#more readeable and code details on Github.</h2>
+          <div class="projects" id="projects">
+            <h2 class="projects-title">Some of my Recent Projects</h2>
+            <div class="cards projects-cards">
+              <div class="project-container project-card">
+                <img
+                  src="./images/plus-minus-calculator.png"
+                  alt="simple plus minus calculator"
+                  loading="lazy"
+                  class="project-pic" />
+                <h3 class="project-title">Plus Minus Calculator</h3>
+                <p class="project-details">
+                  It could only increment and decrement number, but this is my
+                  first ever completed fully functional program!
+                </p>
+                <a
+                  href="https://github.com/ryanisnew/personal-projects/tree/main/web/plus-minus-calculator"
+                  target="_blank" class="project-link">Check out the code</a>
+              </div>
+              <div class="project-container project-card">
+                <img
+                  src="./images/heroImage.jpeg"
+                  alt="empty"
+                  loading="lazy"
+                  class="project-pic" />
+                <h3 class="project-title">empty</h3>
+                <p class="project-details">
+                  no project yet!
+                </p>
+                <a href="#" target="_blank" class="project-link">Check out the
+                  code</a>
+              </div>
+              <div class="project-container project-card">
+                <img
+                  src="./images/note.png"
+                  alt="note"
+                  loading="lazy"
+                  class="project-pic" />
+                <h3 class="project-title">Note</h3>
+                <p class="project-details">
+                  This is a non-functional projects, it only has HTML & CSS!
+                </p>
+                <a
+                  href="https://github.com/ryanisnew/personal-projects/blob/main/web/to-do-list/index.html"
+                  target="_blank" class="project-link">Check out the code</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="cards" id="contact">
-          <h3>Find me on:</h3>
-          <div class="contact-methods">
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Github</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <!-- contact -->
+        <div class="contact" id="contact">
+          <h2>Get In Touch With Me</h2>
+          <div class="contact-form-container">
+            <div class="contact-form cards">
+              <form action="https://formspree.io/f/xyylngw" method="POST">
+                <div class="form-control">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="sender-name"
+                    placeholder="Enter Your Name"
+                    class="input-field"
+                    required />
+                </div>
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="sender-email"
+                    placeholder="Enter Your Email"
+                    class="input-field"
+                    required />
+                </div>
+                <div class="form-control">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    cols="60"
+                    rows="10"
+                    placeholder="Enter Your Message"
+                    name="message"
+                    class="input-field"
+                    required></textarea>
+                </div>
+                <input
+                  type="submit"
+                  value="Submit"
+                  id="submit-btn"
+                  class="submit-btn" />
+              </form>
+            </div>
           </div>
-          <button class="btn">GET IN TOUCH</button>
         </div>
       </div>
+
+      <!-- social media side nav bar -->
+      <div class="socials">
+        <a href="https://www.instagram.com/stevenyuen61/" target="_blank"><img
+            src="https://media2.giphy.com/media/l41YmiCZ8HXvVl5M4/giphy.gif?cid=ecf05e47aiizfy9mqqukms3fv747mh7f6mr0tv2dccu1erzc&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon" /></a>
+        <a href="https://www.linkedin.com/in/ryan-yuen-a8717328a/" target="_blank"><img
+            src="https://cliply.co/wp-content/uploads/2021/02/372102050_LINKEDIN_ICON_400px.gif"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon" /></a>
+        <a href="https://github.com/ryanisnew" target="_blank"><img src="./images/github.gif"
+            alt="Github" class="socicon" /></a>
+      </div>
     </div>
+
+    <!-- footer, copyright sth -->
+    <footer>
+      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">
+        Built with &#128293; by
+        <a href="https://www.instagram.com/stevenyuen61/" target="_blank">Ryan Yuen
+          (Ryan)</a>
+      </p>
+    </footer>
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
   </body>

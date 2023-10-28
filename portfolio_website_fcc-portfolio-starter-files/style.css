@@ -86,6 +86,7 @@ html {
     background-image: url(./images/stars.jpg);
     background-size: contain;
     background-attachment: fixed;
+    z-index: -999;
 }
 .container-content {
     height: 100vh;
@@ -102,12 +103,73 @@ html {
 #about-title {
     position: absolute;
     top: 90px;
-}
-#about-title h3 {
-    color: white;
-    font-size: 3rem;
-}
+    display: flex;
 
+}
+/* about title animation effects */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
+.string {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: move 4s infinite;
+  }
+  
+  .greeting {
+    position: relative;
+    top: 1.2vmin;
+    animation: white-out 5s infinite;
+  }
+  
+  .closure::after {
+    content: '';
+    position: absolute;
+    height: 25vmin;
+    width: 40vmin;
+    background: url(./images/stars.jpg);
+    z-index: -2;
+    transform: translate(-45vmin, -24.5vmin);
+  }
+  
+  .closure::before {
+    content: '';
+    position: absolute;
+    height: 25vmin;
+    width: 40vmin;
+    background: url(./images/stars.jpg);
+    z-index: -2;
+    transform: translate(-40vmin, 5vmin);
+  }
+  
+  .en {
+    color: #fa8231;
+  }
+  
+  .es {
+    color: white;
+  }
+  
+  .de {
+    color: #c678dd;
+  }
+  
+  .it {
+    color: #a9b0bd;
+  }
+  
+  @keyframes move {
+    25% {
+      transform: translatey(-5.8vmin);
+      opacity: 1;
+    }
+    50% {
+      transform: translatey(-11vmin);
+    }
+    75% {
+      transform: translatey(-16.5vmin);
+    }
+  }
 
 /* text of about */
 #about img, .intro {
@@ -115,7 +177,8 @@ html {
 }
 #about {
     width: 100%;    
-    background-color: rgba(0, 0, 0, 0.6);;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -500;
 }
 #cropper{
     width: auto;

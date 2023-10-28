@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- linking css file -->
     <link rel="stylesheet" href="style.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"rel="stylesheet'>
+    <link rel='stylesheet'
+      href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"rel="stylesheet'>
   </head>
 
   <body>
@@ -19,7 +20,8 @@
         <div class="navlist">
           <ul>
             <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
-            <li class="nav-item"><a href="#resume-projects" class="nav-link">Resume & Projects</a></li>
+            <li class="nav-item"><a href="#resume-projects" class="nav-link">My skills & Resume</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </div>
@@ -32,39 +34,86 @@
       <div class="container-content">
         <div class="cards" id="about">
           <div id="about-title">
-            <h1 style="color: #BC7756;"><span style="color: #6DB5CD;">console</span><span style="color:white;">.<span style="color:#B19B50;">log</span></span><span style="color: white;">(</span>"</h1>
+            <h1 style="color: #BC7756;"><span style="color: #6DB5CD;">console</span><span
+                style="color:white;">.<span style="color:#B19B50;">log</span></span><span
+                style="color: white;">(</span>"</h1>
             <div class="string">
               <h1 class="greeting en">Hello World!</h1>
               <h1 class="greeting zh">你好!</h1>
               <h1 class="greeting de">Hallo Welt!</h1>
-              <h1 class="greeting it">Ciao Mondo!</h1>  
+              <h1 class="greeting it">Ciao Mondo!</h1>
             </div>
-            <h1 style="color: #BC7756;" class="closure">"<span style="color: white;">);</span></h1>
+            <h1 style="color: #BC7756;" class="closure">"<span
+                style="color: white;">);</span></h1>
           </div>
           <div id="cropper">
             <img src="./images/ryan icon.jpg" alt="selfie">
           </div>
           <div class="intro">
             <h2><span class="small-font">about</span> Ryan Yuen</h2>
-            <p class="about-info">Seeking an entry-level opportunity with an esteemed organization where I can utilize my skills & enhance learning in the field of work. Capable of mastering new technologies.</p>
+            <p class="about-info">Seeking an entry-level opportunity with an
+              esteemed organization where I can utilize my skills & enhance
+              learning in the field of work. Capable of mastering new
+              technologies.</p>
             <h2>Why Work With Me</h2>
-            <p class="about-info">I'm a great communicator & love to learn & I want to make peoples life easier!</p>
+            <p class="about-info">I'm a great communicator & love to learn & I
+              want to make peoples life easier!</p>
           </div>
         </div>
 
         <div class="resume-back">
           <div class="cards" id="resume-projects">
-            <div id="resume">
-              <h3>Resume</h3>
-              <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vTUhgWFixms-BuqWH0LwYdu3JRzLthXD1dhm9Ge4ZBpw7Ar2IKYqVWP0X79QqKsllsgJwz2pWG3czs9/pub" class="resume-btn">Ryan's resume document</a>
+            <!-- skills -->
+            <div class="skill-section">
+              <h3 class="section-title skill-title">My skills</h3>
+              <div class="skills-wrapper">
+                <div class="skill-card html">
+                  <img class="skill-img"
+                    src="https://www.cnet.com/a/img/resize/39e05dbff495f3ecbf044772f45baf993b92890a/hub/2011/01/18/6ee1f979-f0f7-11e2-8c7c-d4ae52e62bcc/HTML5_Logo_550px.png?auto=webp&fit=crop&height=900&width=1200"
+                    alt="html logo">
+                  <h4>HTML</h4>
+                </div>
+                <div class="skill-card css">
+                  <img class="skill-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
+                    alt="css logo">
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill-card js">
+                  <img class="skill-img"
+                    src="https://i0.wp.com/blog.canadianwebhosting.com/wp-content/uploads/2018/04/javascript-logo.png?fit=587%2C330&ssl=1"
+                    alt="JavaScript logo">
+                  <h4>JavaScript</h4>
+                </div>
+                <div class="skill-card git">
+                  <img class="skill-img"
+                    src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+                    alt="Git logo">
+                  <h4>Git</h4>
+                </div>
+                <div class="skill-card problem-solving">
+                  <img class="skill-img"
+                    src="https://sixsigmadsi.com/wp-content/uploads/2022/05/I.D.E.A.S.jpg"
+                    alt="problem solving diagram">
+                  <h4>Problem solving</h4>
+                </div>
+              </div>
             </div>
-            <div id="projects">
-              <h3>Projects</h3>
-              <h2>#more readeable and code details on Github.</h2>
+            <!-- resume document -->
+            <div id="resume">
+              <a target="_blank"
+                href="https://docs.google.com/document/d/e/2PACX-1vTUhgWFixms-BuqWH0LwYdu3JRzLthXD1dhm9Ge4ZBpw7Ar2IKYqVWP0X79QqKsllsgJwz2pWG3czs9/pub"
+                class="resume-btn">Ryan's resume document</a>
             </div>
           </div>
         </div>
 
+        <div class="projects-back">
+          <div id="projects">
+            <h3 class="section-title">Projects</h3>
+            <h2>#more readeable and code details on Github.</h2>
+          </div>
+        </div>
 
         <div class="cards" id="contact">
           <h3>Find me on:</h3>

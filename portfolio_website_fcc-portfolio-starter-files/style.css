@@ -85,17 +85,11 @@ html {
     width: 100%;
     background-image: url(./images/stars.jpg);
     background-size: contain;
+    background-attachment: fixed;
 }
 .container-content {
     height: 100vh;
     margin: 45px 20vw 0px;
-}
-/* about */
-#about img, .intro {
-    margin: 60px auto;
-}
-#about {
-    width: 100%;
 }
 .cards {
     height: 85vh;
@@ -104,27 +98,53 @@ html {
     justify-content: center;
     align-items: center;
 }
+/* about */
+#about-title {
+    position: absolute;
+    top: 90px;
+}
+#about-title h3 {
+    color: white;
+    font-size: 3rem;
+}
+
+
+/* text of about */
+#about img, .intro {
+    margin: 100px auto 60px;
+}
+#about {
+    width: 100%;    
+    background-color: rgba(0, 0, 0, 0.6);;
+}
 #cropper{
-    width: 1500px;
+    width: auto;
     height: auto;
     overflow:hidden;
     border-radius: 10px;
 }
 #cropper img{
-    position:relative;
-    left: -18%;
+    position: relative;
+    left: -11%;
 }
 .intro{
     margin-left: 20px;
+    width: 600px;
 }
+/* font size and style */
 .intro h2{
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
 }
-.intro p {
-    font-size: 20px;
-    height: 300px; 
+.intro .small-font {
+    font-size: 2rem;
 }
+.intro .about-info {
+    font-size: 18px;
+    height: 120px; 
+}
+/* ends of about */
 
 /* starts of resume */
 .resume-back {
@@ -134,4 +154,42 @@ html {
     height: 100vh;
     position: absolute;
     left: 0 ;
+}
+#resume-projects {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+}
+.resume-btn {
+    display: inline-block;
+    background: #1e3551;
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 30px;
+    margin: 30px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #1e3551;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    height: 70px;
+    width: 600px;
+    text-align: center;
+}
+.resume-btn:hover {
+    height: 70px;
+    width: 600px;
+    background-color: orange;
+}
+
+/* resume */
+#resume {
+    margin-top: -300px;
+}
+#resume h3, #projects h3 {
+    font-size: 50px;
+    text-align: center;
 }

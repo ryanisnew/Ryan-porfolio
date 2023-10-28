@@ -102,7 +102,7 @@ html {
 /* about */
 #about-title {
     position: absolute;
-    top: 90px;
+    top: 120px;
     display: flex;
 
 }
@@ -114,11 +114,12 @@ html {
     flex-direction: column;
     text-align: center;
     animation: move 4s infinite;
+    z-index: 1;
   }
   
   .greeting {
     position: relative;
-    top: 1.2vmin;
+    top: 0.5vmin;
     animation: white-out 5s infinite;
   }
   
@@ -128,17 +129,18 @@ html {
     height: 25vmin;
     width: 40vmin;
     background: url(./images/stars.jpg);
-    z-index: -2;
+    z-index: 3;
     transform: translate(-45vmin, -24.5vmin);
   }
   
   .closure::before {
     content: '';
     position: absolute;
-    height: 25vmin;
+    margin-top: 5px;
+    height: 20vmin;
     width: 40vmin;
     background: url(./images/stars.jpg);
-    z-index: -2;
+    z-index: 4;
     transform: translate(-40vmin, 5vmin);
   }
   
@@ -146,7 +148,7 @@ html {
     color: #fa8231;
   }
   
-  .es {
+  .zh {
     color: white;
   }
   
@@ -155,7 +157,7 @@ html {
   }
   
   .it {
-    color: #a9b0bd;
+    color: lightblue;
   }
   
   @keyframes move {
@@ -178,13 +180,17 @@ html {
 #about {
     width: 100%;    
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: -500;
+    z-index: 5;
+}
+#wrapped-about {
+    
 }
 #cropper{
     width: auto;
     height: auto;
     overflow:hidden;
     border-radius: 10px;
+    z-index: 10;
 }
 #cropper img{
     position: relative;
@@ -193,6 +199,7 @@ html {
 .intro{
     margin-left: 20px;
     width: 600px;
+    z-index: 10;
 }
 /* font size and style */
 .intro h2{

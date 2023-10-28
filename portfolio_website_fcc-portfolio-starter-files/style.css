@@ -259,7 +259,8 @@ html {
     font-weight: 400;
     border-radius: 6px;
     border: 2px solid #1e3551;
-    transition: background-color 0.3s;
+    box-shadow: 0 5px 10px white;
+    transition: background-color 0.3s, box-shadow 0.3s;
     text-decoration: none;
     height: 70px;
     width: 500px;
@@ -268,6 +269,7 @@ html {
 
 .resume-btn:hover {
     background-color: orange;
+    box-shadow: 0 5px 10px #1e3551;
 }
 
 /* resume section position and title style */
@@ -323,6 +325,8 @@ html {
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    box-shadow: 0 2px 10px #ff7235;
+
 }
 /* crop skill card img */
 .skill-card .css {

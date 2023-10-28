@@ -286,23 +286,35 @@ html {
 
 /* starts of my skills */
 .skill-section{
-    margin-bottom: 300px;
+    margin-bottom: 250px;
+}
+.skill-title{
+    margin: 30px;
 }
 .skills-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 .skill-img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
+    padding: 20px;
+}
+.skill-card h4 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    position: relative;
+    padding: 10px;
 }
 .skill-card {
     margin: 10px;
     padding: 10px;
-    width: 150px;
+    width: 170px;
     height: 220px;
     background-color: white;
     border-radius: 10px;
@@ -310,9 +322,9 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
-.skill-card h4 {
-    text-align: center;
-    font-size: 30px;
-    color: black;
+/* crop skill card img */
+.skill-card .css {
+    object-fit: contain;
 }

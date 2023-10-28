@@ -5,6 +5,7 @@
     font-family: "Ubuntu", sans-serif;
     color: white;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -31,7 +32,7 @@ html {
     margin: 0 10px;
 }
 
-.navlist{
+.navlist {
     height: 100%;
 }
 
@@ -77,6 +78,7 @@ html {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 /* ends of navbar */
 
 /* starts of content */
@@ -85,46 +87,148 @@ html {
     width: 100%;
     background-image: url(./images/stars.jpg);
     background-size: contain;
+    background-attachment: fixed;
+    z-index: -999;
 }
+
 .container-content {
     height: 100vh;
     margin: 45px 20vw 0px;
 }
-/* about */
-#about img, .intro {
-    margin: 60px auto;
-}
-#about {
-    width: 100%;
-}
+
 .cards {
     height: 85vh;
-    width: 100% ;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#cropper{
-    width: 1500px;
+
+/* about */
+#about-title {
+    position: absolute;
+    top: 120px;
+    display: flex;
+
+}
+
+/* about title animation effects */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
+.string {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: move 5s infinite;
+    z-index: 1;
+}
+
+.greeting {
+    position: relative;
+    top: 0.5vmin;
+    animation: white-out 2s infinite;
+}
+
+.closure::after {
+    content: '';
+    position: absolute;
+    height: 25vmin;
+    width: 40vmin;
+    background: url(./images/stars.jpg);
+    z-index: 3;
+    transform: translate(-45vmin, -24.5vmin);
+}
+
+.closure::before {
+    content: '';
+    position: absolute;
+    margin-top: 5px;
+    height: 20vmin;
+    width: 40vmin;
+    background: url(./images/stars.jpg);
+    z-index: 4;
+    transform: translate(-40vmin, 5vmin);
+}
+
+.en {
+    color: #fa8231;
+}
+
+.zh {
+    color: white;
+}
+
+.de {
+    color: #c678dd;
+}
+
+.it {
+    color: lightblue;
+}
+
+@keyframes move {
+    25% {
+        transform: translatey(-5.8vmin);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translatey(-11vmin);
+    }
+
+    75% {
+        transform: translatey(-16.5vmin);
+    }
+}
+
+/* text of about */
+#about img,
+.intro {
+    margin: 100px auto 60px;
+}
+
+#about {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#cropper {
+    width: auto;
     height: auto;
-    overflow:hidden;
+    overflow: hidden;
     border-radius: 10px;
+    z-index: 10;
 }
-#cropper img{
-    position:relative;
-    left: -18%;
+
+#cropper img {
+    position: relative;
+    left: -11%;
 }
-.intro{
+
+.intro {
     margin-left: 20px;
+    width: 600px;
+    z-index: 10;
 }
-.intro h2{
+
+/* font size and style */
+.intro h2 {
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
 }
-.intro p {
-    font-size: 20px;
-    height: 300px; 
+
+.intro .small-font {
+    font-size: 2rem;
 }
+
+.intro .about-info {
+    font-size: 18px;
+    height: 120px;
+}
+
+/* ends of about */
 
 /* starts of resume */
 .resume-back {
@@ -133,5 +237,98 @@ html {
     width: 100%;
     height: 100vh;
     position: absolute;
-    left: 0 ;
+    left: 0;
+}
+
+#resume-projects {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-btn {
+    display: inline-block;
+    background: #1e3551;
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 10px;
+    margin: 30px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #1e3551;
+    box-shadow: 0 5px 10px white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    height: 70px;
+    width: 500px;
+    text-align: center;
+}
+
+.resume-btn:hover {
+    background-color: orange;
+    box-shadow: 0 5px 10px #1e3551;
+}
+
+/* resume section position and title style */
+#resume {
+    margin-top: -200px;
+}
+.section-title {
+    font-size: 50px;
+    text-align: center;
+    color: darkred;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+/* ends of resume */
+
+/* starts of my skills */
+.skill-section{
+    margin-bottom: 250px;
+}
+.skill-title{
+    margin: 30px;
+}
+.skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.skill-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    padding: 20px;
+}
+.skill-card h4 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    position: relative;
+    padding: 10px;
+}
+.skill-card {
+    margin: 10px;
+    padding: 10px;
+    width: 170px;
+    height: 220px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 2px 10px #ff7235;
+
+}
+/* crop skill card img */
+.skill-card .css {
+    object-fit: contain;
 }

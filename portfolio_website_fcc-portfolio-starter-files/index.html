@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- linking css file -->
     <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"rel="stylesheet'>
   </head>
 
   <body>
@@ -27,28 +28,34 @@
     </nav>
 
     <!-- everything in below are contents -->
-    <div class="container-content">
+    <div class="container">
       <!-- introduction -->
-      <div class="container-about">
+      <div class="container-content">
         <div class="cards" id="about">
-          <img src="./images/ryan icon.jpg" alt="selfie">
+          <div id="cropper">
+            <img src="./images/ryan icon.jpg" alt="selfie">
+          </div>
           <div class="intro">
             <h2>hi I am Ryan</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam doloribus omnis odit possimus natus mollitia, nisi repudiandae placeat hic sed animi blanditiis saepe fugit optio fugiat assumenda voluptatem! Ipsum ad fugiat quibusdam delectus facilis odio voluptas maxime commodi, excepturi nobis quas asperiores modi eum ratione accusamus eius debitis aspernatur?  </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam
+              doloribus omnis odit possimus natus mollitia, nisi repudiandae
+              placeat hic sed animi blanditiis saepe fugit optio fugiat
+              assumenda voluptatem! Ipsum ad fugiat quibusdam delectus facilis
+              odio voluptas maxime commodi, excepturi nobis quas asperiores modi
+              eum ratione accusamus eius debitis aspernatur? </p>
           </div>
         </div>
 
-
-        <div class="cards" id="resume">
-          <h3>resume</h3>
+        <div class="resume-back">
+          <div class="cards" id="resume">
+            <h3>resume</h3>
+          </div>
         </div>
-
 
         <div class="cards" id="projects">
           <h3>projects</h3>
           <h2>#more readeable and code details on Github.</h2>
         </div>
-
 
         <div class="cards" id="contact">
           <h3>Find me on:</h3>
@@ -60,7 +67,6 @@
           <button class="btn">GET IN TOUCH</button>
         </div>
       </div>
-
     </div>
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>

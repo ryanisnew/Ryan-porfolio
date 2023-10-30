@@ -2,6 +2,7 @@
 :root {
     --bottom-margin: 0.5rem;
     --primary-shadow: #8b8eaf;
+    --primary-color: #4756df;
 }
 
 * {
@@ -413,14 +414,15 @@ html {
 .project-link {
     color: black;
 }
+
 /* ends of projects */
 
 /* starts of contacts */
 #contact {
     margin-top: 82rem;
-  }
-  
-  #contact h2 {
+}
+
+#contact h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 50px;
@@ -428,29 +430,32 @@ html {
     color: darkred;
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
         1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
-  }
-  .contact-form {
+}
+
+.contact-form {
     height: 70vh;
-  }
-  .contact-form-container {
+}
+
+.contact-form-container {
     max-width: 40.75rem;
     margin: 0 auto;
     padding: 0.938rem;
     border-radius: 5px;
     box-shadow: 0 3px 10px #a17a69;
-  }
-  .contact-form-container label {
+}
+
+.contact-form-container label {
     line-height: 2.7em;
     font-weight: bold;
     color: #4756df;
-  }
-  
-  .contact-form-container textarea {
+}
+
+.contact-form-container textarea {
     min-height: 6.25rem;
     font-size: 14px;
-  }
-  
-  .contact-form-container .input-field {
+}
+
+.contact-form-container .input-field {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -461,11 +466,13 @@ html {
     outline: none;
     color: blue;
     padding-left: 0.5rem;
-  }
-  .input-field::placeholder {
+}
+
+.input-field::placeholder {
     color: #4756df;
-  }
-  .submit-btn {
+}
+
+.submit-btn {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -476,39 +483,85 @@ html {
     font-size: 1rem;
     font-weight: bold;
     transition: 0.3s;
-  }
-  .submit-btn:hover {
+}
+
+.submit-btn:hover {
     background-color: #4756df;
     border: 2px solid #4756df;
     cursor: pointer;
     color: white;
-  }
-  /* ends of contact */
+}
 
-  /* starts of social */
-  .socials {
+/* ends of contact */
+
+/* starts of social */
+.socials {
     display: flex;
     flex-direction: column;
     position: fixed;
     right: 1%;
     bottom: 50%;
-  }
-  
-  .socicon {
+}
+
+.socicon {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     background-color: white;
-  }
-  /* ends of social */
+}
 
-  /* footer */
-  footer {
+/* ends of social */
+
+/* footer */
+footer {
     background-color: var(--bg-color);
     padding: 1.25rem;
     text-align: right;
     margin-top: 110rem;
-  }
-  footer p, footer p a {
+}
+
+footer p,
+footer p a {
     color: orange;
+}
+
+/* starts of responsive screen size */
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
   }
+
+@media screen and (max-width: 720px) {
+
+    /*changes reflects on screen with a width of 720px and below*/
+    .container-nav .logo a {
+        padding: 1.5rem 1rem;
+    }
+
+    .navlist ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .navlist ul li {
+        margin: 8px;
+    }
+    .burger-menu {
+        display: block;
+      }
+    
+    .navlist ul.show {
+        transform: translateX(0);
+      }
+}

@@ -168,7 +168,7 @@
           <h2>Get In Touch With Me</h2>
           <div class="contact-form-container">
             <div class="contact-form cards">
-              <form action="mailto:nashhacking@gmail.com" method="POST">
+              <form action="https://formsubmit.co/your@email.com" method="POST" id="form-tag">
                 <div class="form-control">
                   <label for="name">Name</label>
                   <input
@@ -200,6 +200,8 @@
                     class="input-field"
                     required></textarea>
                 </div>
+                <input type="hidden" name="_next" value="https://translate.google.com/?sl=en&tl=zh-TW&text=i%20will%20reply%20back%20to%20you%20soon&op=translate">
+                <input type="hidden" name="_captcha" value="false">
                 <a href="./thanks/thanks.html">
                   <input
                   type="submit"

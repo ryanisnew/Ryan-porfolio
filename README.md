@@ -5,5 +5,5 @@ HTML, CSS and JavaScript Portfolio Website
 * HTML, CSS and JavaScript
 * [Font family] Ubuntu
 
-This is the [live demo](https://brad-portfolio.netlify.app/) of the project . 
+This is the [live demo](https://ryanisnew.github.io/Ryan-porfolio/#about) of the project . 
 
